@@ -1,1 +1,37 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 1px;
+}
+
+body {
+  background: #fbf0ff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body header {
+  display: none;
+  padding: 0px;
+  border-radius: 5px;
+}
+body header #title {
+  background: #f4d9ff;
+  width: auto;
+  border: 2px black solid;
+  padding: 4px;
+  border-radius: 5px;
+}
+body header #title h1 {
+  justify-self: center;
+}
+body header nav {
+  background: #f4d9ff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px black solid;
+  padding: 8px;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
