@@ -1,5 +1,5 @@
 * {
-  margin: 1px;
+  margin: 3px;
 }
 
 body {
@@ -31,7 +31,76 @@ body header nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border: 2px black solid;
+  border: 3px black solid;
   padding: 8px;
   border-radius: 5px;
+}
+body header nav a {
+  color: #ba23f6;
+  text-decoration: none;
+}
+body header nav a:hover {
+  color: black;
+  background: thirdColor;
+  text-decoration: none;
+}
+body main {
+  display: none;
+  padding: 0px;
+  border-radius: 5px;
+  background: #f4d9ff;
+  width: auto;
+  border: 2px black solid;
+  padding: 4px;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
+}
+body main #top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main #core {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px;
+}
+body main #core div {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60;
+}
+body main #core div img {
+  width: 30%;
+  margin: 0px;
+}
+body main #core div .bigImage {
+  width: 60%;
+}
+body main #core #text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+body main #core #text h3 {
+  background: #e08fff;
+  text-align: center;
+  margin: 0px;
+}
+body main #bottom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
