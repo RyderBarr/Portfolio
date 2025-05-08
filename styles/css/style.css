@@ -31,7 +31,7 @@ body header nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border: 3px black solid;
+  border: 2px black solid;
   padding: 8px;
   border-radius: 5px;
 }
@@ -46,15 +46,20 @@ body header nav a:hover {
 }
 body main {
   display: none;
-  padding: 0px;
   border-radius: 5px;
   background: #f4d9ff;
   width: auto;
   border: 2px black solid;
-  padding: 4px;
+  padding: 3px;
   border-radius: 5px;
   flex-direction: row;
   justify-content: center;
+}
+body main button {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 100%;
+  background: #e08fff;
 }
 body main #top {
   display: flex;
@@ -84,14 +89,19 @@ body main #core div img {
 body main #core div .bigImage {
   width: 60%;
 }
+body main #core div div {
+  display: none;
+}
 body main #core #text {
   width: 60%;
+  background: #e08fff;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 0px;
+  padding: 80px 0px;
 }
 body main #core #text h3 {
   background: #e08fff;
