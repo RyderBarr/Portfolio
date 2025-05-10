@@ -121,7 +121,7 @@
     <script>
         $(document).ready(function(){
 
-            $('header').slideToggle(4000,function(){
+            $('header').slideToggle(2000,function(){
 
                 $('main').slideToggle(4000,function(){
 
@@ -131,7 +131,47 @@
 
             })
 
+            function randomStyleImg(){
+
+                let smallimgsize = Math.floor(Math.random()*20 + 10) + '%'
+
+                let bigImageSize = Math.floor(Math.random()*40 + 20) + '%'
+
+            }
+
+            function randomStyleText(){
+
+                let textSize = Math.floor(Math.random()*60 + 20) + '%'
+
+                let fontSize = Math.floor(Math.random()* 24 + 10) + 'px'
+
+            }
+
+            function getRandomColor(where,what)
+            {
+
+                $(`${where}`).css(`${what}`,`rgb(${Math.floor(Math.random()*255+1)}, ${Math.floor(Math.random()*255+1)}, ${Math.floor(Math.random()*255+1)})`)
+
+            }
+
+            function randomStyleColor(){
+
+                getRandomColor('body','background')
+                getRandomColor('header','background')
+                getRandomColor('#title','background')
+                getRandomColor('nav','background')
+                getRandomColor('main','background')
+                getRandomColor('#text','background')
+                getRandomColor('#text','color')
+
+            }
+
+            
+
+            randomStyleColor()
+
         })
+
     </script>
 
 </body>
