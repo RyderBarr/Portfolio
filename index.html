@@ -92,11 +92,11 @@
 
         </div>
         
-        <div id="bottom" id="buttonThree">
+        <div id="bottom">
             
             <div>
             
-                <button>
+                <button id="buttonThree">
                     
                     3
 
@@ -121,29 +121,10 @@
     <script>
         $(document).ready(function(){
 
-            $('header').slideToggle(2000,function(){
+            function getRandomColor(where,what)
+            {
 
-                $('main').slideToggle(4000,function(){
-
-
-
-                })
-
-            })
-
-            function randomStyleImg(){
-
-                let smallimgsize = Math.floor(Math.random()*20 + 10) + '%'
-
-                let bigImageSize = Math.floor(Math.random()*40 + 20) + '%'
-
-            }
-
-            function randomStyleText(){
-
-                let textSize = Math.floor(Math.random()*60 + 20) + '%'
-
-                let fontSize = Math.floor(Math.random()* 24 + 10) + 'px'
+                $(`${where}`).css(`${what}`,`rgb(${Math.floor(Math.random()*255+1)}, ${Math.floor(Math.random()*255+1)}, ${Math.floor(Math.random()*255+1)})`)
 
             }
 
@@ -154,7 +135,8 @@
 
             }
 
-            function randomStyleColor(){
+            function randomStyleColor()
+            {
 
                 getRandomColor('body','background')
                 getRandomColor('header','background')
@@ -166,9 +148,66 @@
 
             }
 
-            
+            function randomStyleImg()
+            {
 
-            randomStyleColor()
+                $(`img`).css(`width`,`${Math.floor(Math.random()*40 + 10)}%`)
+
+                $(`.bigImage`).css(`width`,`${Math.floor(Math.random()*60 + 30)}%`)
+
+            }
+
+            function randomStyleText(){
+                
+                    $('#text').css('width',`${Math.floor(Math.random()*60 + 30)}%`)
+
+
+                $('h3').css('font-size',`${Math.floor(Math.random()* 30 + 10)}px`)
+
+            }
+
+            function randomColorImg()
+            {
+
+                $('img').css('filter',`invert(${Math.floor(Math.random()*9 + 1) *10}%)`)
+                $(`.bigImage`).css('filter',`invert(${Math.floor(Math.random()*9 + 1) *10}%)`)
+
+                // filter: invert(100%);
+
+            }
+
+            $('header').slideToggle(100,function(){
+
+                $('main').slideToggle(100,function(){
+
+                    
+
+                })
+
+            })
+            
+            $('#buttonOne').on('click',function(event){
+
+                randomStyleColor()
+
+            })
+      
+            $('#buttonTwo').on('click',function(event){
+
+                randomStyleText()
+
+            })
+     
+            $('#buttonThree').on('click',function(event){
+
+                randomColorImg()
+
+            })
+            $('#buttonFour').on('click',function(event){
+
+                randomStyleImg()
+
+            })
 
         })
 
