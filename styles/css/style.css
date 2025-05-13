@@ -6,8 +6,8 @@ body {
   background: #fbf0ff;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
+  height: auto;
 }
 body header {
   display: none;
@@ -54,12 +54,20 @@ body main {
   border-radius: 5px;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  height: auto;
 }
 body main button {
   width: 16vw;
   height: 16vw;
   border-radius: 100%;
   background: #e08fff;
+}
+@media only screen and (min-width: 800px) {
+  body main button {
+    width: 8vw;
+    height: 8vw;
+  }
 }
 body main #top {
   display: flex;
@@ -72,6 +80,7 @@ body main #core {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin: 0px;
 }
 body main #core div {
@@ -80,14 +89,14 @@ body main #core div {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 60;
+  width: 60%;
 }
 body main #core div img {
-  width: 30%;
+  width: 50%;
   margin: 0px;
 }
 body main #core div .bigImage {
-  width: 60%;
+  width: 100%;
 }
 body main #core div div {
   display: none;
@@ -106,6 +115,61 @@ body main #core #text {
 body main #core #text h3 {
   text-align: center;
   margin: 0px;
+}
+@media only screen and (min-width: 800px) {
+  body main #core {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+  }
+  body main #core div {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 30vh;
+  }
+  body main #core div img {
+    height: 30vh;
+    width: 30vh;
+    margin: 0px;
+  }
+  body main #core div .bigImage {
+    display: none;
+  }
+  body main #core div div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+  }
+  body main #core div div img {
+    margin: 0px;
+  }
+  body main #core #text {
+    background: #e08fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    height: 60vh;
+    width: 40%;
+  }
+  body main #core #text h3 {
+    text-align: center;
+    margin: 0px;
+  }
 }
 body main #bottom {
   display: flex;

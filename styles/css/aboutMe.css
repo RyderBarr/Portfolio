@@ -1,1 +1,26 @@
-/*# sourceMappingURL=aboutMe.css.map */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbf0ff;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body header h1 {
+  width: 38vw;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f4d9ff;
+  text-align: center;
+}
+body header div {
+  width: 58%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f4d9ff;
+  color: #ba23f6;
+  text-align: center;
+}/*# sourceMappingURL=aboutMe.css.map */

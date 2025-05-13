@@ -1,0 +1,46 @@
+$firstColor:#fbf0ff;
+$secondColor:#f4d9ff;
+$thirdColor:#e08fff;
+$fourthColor:#ba23f6;
+
+body
+{
+
+    display: flex;
+    flex-direction: column;
+    background-color: $firstColor;
+
+    header
+    {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        h1
+        {
+            width: 38vw;
+
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: $secondColor;
+            text-align: center;
+
+        }
+
+        div
+        {
+
+            width: 58%;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: $secondColor;
+            color: $fourthColor;
+            text-align: center;
+
+        }
+
+    }
+
+}
