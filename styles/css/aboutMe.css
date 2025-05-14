@@ -2,25 +2,74 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #fbf0ff;
+  justify-content: center;
+  align-items: center;
 }
 body header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95vw;
+}
+body header section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 25vh;
+  height: auto;
+  width: 39%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f4d9ff;
+}
+body header section h1 {
+  text-align: center;
+}
+body header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 25vh;
+  height: auto;
+  width: 59%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f4d9ff;
+}
+body header nav a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #ba23f6;
+  text-align: center;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  display: block;
+}
+body main {
+  background: #f4d9ff;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 95vw;
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+body main section {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-body header h1 {
-  width: 38vw;
+body main section div {
   border: 1px solid black;
+  width: 43vw;
+  margin: 5px;
   border-radius: 5px;
-  background-color: #f4d9ff;
-  text-align: center;
-}
-body header div {
-  width: 58%;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #f4d9ff;
-  color: #ba23f6;
   text-align: center;
 }/*# sourceMappingURL=aboutMe.css.map */
