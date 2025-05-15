@@ -88,7 +88,8 @@ body
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        min-height: 60vh;
+        min-height: 50vh;
+        height: auto;
 
         section
         {
@@ -101,11 +102,49 @@ body
             div
             {
 
-                border: 1px solid black;
+                border: 3px solid black;
                 width: 43vw;
                 margin: 5px;
                 border-radius: 5px;
                 text-align: center;
+                background-color: $thirdColor;
+                position: relative;
+
+            }
+
+            .img
+            {
+
+
+                height: 40vw;
+                background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Super_Mario_Bros_Super_Show_Title.PNG/250px-Super_Mario_Bros_Super_Show_Title.PNG);
+                background-repeat: no-repeat;
+                background-size: contain;
+
+            }
+
+            #blockOne
+            {
+
+                right: 500px;
+
+            }
+            #blockTwo
+            {
+
+                top: 500px;
+
+            }
+            #blockThree
+            {
+
+                right: 500px;
+
+            }
+            #blockFour
+            {
+
+                left: 500px;
 
             }
 

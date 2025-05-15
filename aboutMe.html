@@ -6,6 +6,7 @@
     <title>About Me</title>
 
     <link rel="stylesheet" href="./styles/css/aboutMe.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -28,19 +29,19 @@
     
                 <div>
                     
-                    <a href="./contact.html">contact</a>
+                    <a href="./contact.html">Contact</a>
 
                 </div>
 
                 <div>
 
-                    <a href="./projects.html">projects</a>
+                    <a href="./projects.html">Projects</a>
 
                 </div>
 
                 <div>
     
-                    <a href="./index.html">home</a>
+                    <a href="./index.html">Home</a>
 
                 </div>
 
@@ -53,23 +54,23 @@
     
             <section>
     
-                <div>
+                <div id="blockOne">
 
                     <p>
                        
-                        text
-                    
+                        My name is Ryder Barr 
+                        <br>
+                        I am a future programmer
+                        <br>
+                        I go to school at West-Mec and Boulder Creek
+                        <br>
+                        I am certified in Java, CSS, and HTML
+                        
                     </p>
 
                 </div>
                 
-                <div>
-
-                    <img>
-
-                        img 
-                    
-                    </img>
+                <div class="img" id="blockTwo">    
 
                 </div>		
         
@@ -77,21 +78,21 @@
 
             <section>
     
-                <div>
-
-                    <img>
-
-                        img 
-                    
-                    </img>
+                <div class="img" id="blockThree">
 
                 </div>
                 
-                <div>
+                <div id="blockFour">
 
                     <p>
                        
-                        text
+                        My name is Ryder Barr 
+                        <br>
+                        I am a future programmer
+                        <br>
+                        I go to school at West-Mec and Boulder Creek
+                        <br>
+                        I am certified in Java, CSS, and HTML
                     
                     </p>
 
@@ -102,6 +103,30 @@
         </main>
     
     </div>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#blockThree').animate({'right':'0px'}, 1000, function()
+            {
+
+                $('#blockOne').animate({'right':'0px'}, 1000, function()
+                {
+
+                    $('#blockTwo').animate({'top':'0px'}, 1000, function()
+                    {
+
+                        $('#blockFour').animate({'left':'0px'}, 1000)
+
+                    })
+
+                })
+
+            })
+
+        })
+        
+    </script>
 
 </body>
 </html>
