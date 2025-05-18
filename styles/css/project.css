@@ -1,1 +1,85 @@
-/*# sourceMappingURL=project.css.map */
+* {
+  margin: 3px;
+}
+
+body {
+  background: #fbf0ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+body header {
+  padding: 0px;
+  border-radius: 5px;
+  height: 15vh;
+}
+body header #title {
+  background: #f4d9ff;
+  width: auto;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px black solid;
+  padding: 4px;
+  border-radius: 5px;
+}
+body header #title h1 {
+  justify-self: center;
+}
+body header nav {
+  height: 5vh;
+  background: #f4d9ff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px black solid;
+  padding: 8px;
+  border-radius: 5px;
+}
+body header nav a {
+  color: #ba23f6;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+}
+body header nav a:hover {
+  color: #e08fff;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px black, -0.5px -0.5px black;
+}
+body main {
+  border-radius: 5px;
+  background: #f4d9ff;
+  width: auto;
+  border: 2px black solid;
+  padding: 10px;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  overflow: auto;
+}
+body main div {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #e08fff;
+  height: 25vh;
+  margin: 10px 0px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body main div section {
+  border: 1px solid black;
+}
+body main div section img {
+  width: 10vw;
+  height: 10vh;
+}/*# sourceMappingURL=project.css.map */

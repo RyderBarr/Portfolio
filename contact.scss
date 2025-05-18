@@ -1,0 +1,145 @@
+$firstColor:#fbf0ff;
+$secondColor:#f4d9ff;
+$thirdColor:#e08fff;
+$fourthColor:#ba23f6;
+
+*{
+
+    margin: 3px;
+
+}
+
+body{
+
+    background: $firstColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    header{
+        
+        padding: 0px;
+        border-radius: 5px;
+
+        #title{
+            background: $secondColor;
+            width: auto;
+            border: 2px black solid;
+            padding: 4px;
+            border-radius: 5px;
+
+            h1{
+
+                justify-self: center;
+
+            }
+
+        }
+
+        nav{
+
+            background: $secondColor;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px black solid;
+            padding: 8px;
+            border-radius: 5px;
+
+            a{
+
+                color: #ba23f6;
+                text-decoration: none;
+                font-size: larger;
+                font-weight: bold;
+
+            }
+            a:hover{
+
+                color: $thirdColor;
+                text-decoration: none;
+                text-shadow: 0.5px 0.5px black, -0.5px -0.5px black;
+
+            }
+
+        }
+
+    }
+
+    main{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        border-radius: 5px;
+        background: $secondColor;
+        width: auto;
+        border: 2px black solid;
+        padding: 3px;
+        border-radius: 5px;
+
+        div{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+            background-color: $thirdColor;
+            width: 98%;
+
+            div{
+
+                input, button, textarea, label
+                {
+
+                    width: 50vw;
+                    text-align: center;
+                    font-size: larger;
+
+                }
+
+            }
+
+            @media only screen and (min-width: 800px)
+            {
+
+                #messagebox
+                {
+
+                    div{
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;    
+                        background-color: $thirdColor;
+                        
+                        button
+                        {
+
+                            width: 20vw;
+                            height: 20vw;
+                            
+                        }
+
+                        textarea{
+
+                            height: 20vw;
+
+                        }
+
+                    }
+                
+                }
+
+            } 
+
+        }
+
+    }
+
+}

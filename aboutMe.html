@@ -50,73 +50,199 @@
         
         </header>
     
-        <main>
-    
-            <section>
-    
-                <div id="blockOne">
+        <div>
 
-                    <p>
-                       
-                        My name is Ryder Barr 
-                        <br>
-                        I am a future programmer
-                        <br>
-                        I go to school at West-Mec and Boulder Creek
-                        <br>
-                        I am certified in Java, CSS, and HTML
+            <main id="firstMain">
+        
+                <section>
+        
+                    <div id="blockOne">
+
+                        <p>
                         
-                    </p>
+                            My name is Ryder Barr 
+                            <br>
+                            I am a future programmer
+                            <br>
+                            I go to school at West-Mec and Boulder Creek
+                            <br>
+                            I am certified in Java, CSS, and HTML
+                            
+                        </p>
 
-                </div>
-                
-                <div class="img" id="blockTwo">    
-
-                </div>		
-        
-            </section>
-
-            <section>
-    
-                <div class="img" id="blockThree">
-
-                </div>
-                
-                <div id="blockFour">
-
-                    <p>
-                       
-                        My name is Ryder Barr 
-                        <br>
-                        I am a future programmer
-                        <br>
-                        I go to school at West-Mec and Boulder Creek
-                        <br>
-                        I am certified in Java, CSS, and HTML
+                    </div>
                     
-                    </p>
+                    <div class="img" id="blockTwo">    
 
-                </div>	
+                        <img src="./img/me.jpeg" alt="">
+                        
+                    </div>		
+            
+                </section>
+
+                <section>
         
-            </section>
+                    <div class="img" id="blockThree">
+
+                        <img src="./img/duck.jpeg" alt="">
+
+                    </div>
+                    
+                    <div id="blockFour">
+
+                        <p>
+                        
+                            I like making websites
+                            <br>
+                            I love Pink Floyd and The Beatles
+                            <br>
+                            I collect records and board games
+                            <br>
+                            I enjoy playing games and learning about animals
+                        
+                        </p>
+
+                    </div>	
+            
+                </section>
+            
+            </main>
+
+            <main id="SecondMain">
         
-        </main>
+                <section>
+        
+                    <div id="blockFive">
+
+                        <p>
+                        
+                            I love to dress up
+                            <br>
+                            I love the colors purple and biege
+                            <br>
+                            I enjoy camping and hiking
+                            <br>
+                            I visting other areas of the world
+                            
+                            <span class="hidden">
+
+                                <br>
+                                <br>
+                                My name is Ryder Barr 
+                                <br>
+                                I am a future programmer
+                                <br>
+                                I go to school at West-Mec and Boulder Creek
+                                <br>
+                                I am certified in Java, CSS, and HTML
+                                
+                            </span>
+                        </p>
+                        
+
+                    </div>
+                    
+                    <div class="img" id="blockSix">    
+
+                        <img src="./img/fish.jpeg" alt="">
+                        
+                        <span class="hidden">
+
+                            <img src="./img/me.jpeg" alt="">
+                        
+                        </span>
+
+                    </div>		
+            
+                </section>
+
+                <section>
+        
+                    <div class="img" id="blockSeven">
+
+                        <img src="./img/tree.jpeg" alt="">
+                        <span class="hidden">
+
+                            <img src="./img/duck.jpeg" alt="">
+                            
+                        </span>
+
+                    </div>
+                    
+                    <div id="blockEight">
+
+                        <p>
+                        
+                            My favorite animal is the platypus
+                            <br>
+                            My favorite album is Wish You Were Here  
+                            <br>
+                            I like to draw in my free time
+                            <br>
+                            I love spending time with my freinds
+                            
+                            <span class="hidden">
+
+                                <br>
+                                <br>
+                                I like making websites
+                                <br>
+                                I love Pink Floyd and The Beatles
+                                <br>
+                                I collect records and board games
+                                <br>
+                                I enjoy playing games and learning about animals
+                                
+                            </span>
+                        </p>
+
+                    </div>	
+            
+                </section>
+            
+            </main>
+
+        </div>
     
     </div>
 
     <script>
         $(document).ready(function(){
 
-            $('#blockThree').animate({'right':'0px'}, 1000, function()
+            $('#blockThree').animate({'bottom':'0px'}, 500, function()
             {
 
-                $('#blockOne').animate({'right':'0px'}, 1000, function()
+                $('#blockOne').animate({'right':'0px'}, 500, function()
                 {
 
-                    $('#blockTwo').animate({'top':'0px'}, 1000, function()
+                    $('#blockTwo').animate({'top':'0px'}, 500, function()
                     {
 
-                        $('#blockFour').animate({'left':'0px'}, 1000)
+                        $('#blockFour').animate({'left':'0px'}, 500, function()
+                        {
+
+                            $('#blockSeven').animate({'bottom':'0px'}, 500, function()
+                            {
+
+                                $('#blockFive').animate({'right':'0px'}, 500, function()
+                                {
+
+                                    $('#blockSix').animate({'top':'0px'}, 500, function()
+                                    {
+
+                                        $('#blockEight').animate({'left':'0px'}, 500, function()
+                                        {
+
+
+                                        })
+
+                                    })
+
+                                })
+
+                            })
+
+                        })
 
                     })
 

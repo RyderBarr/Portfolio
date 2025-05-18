@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -12,6 +17,18 @@ body header {
   align-items: center;
   width: 95vw;
 }
+@media only screen and (min-width: 800px) {
+  body header {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
 body header section {
   display: flex;
   flex-direction: column;
@@ -21,8 +38,21 @@ body header section {
   height: auto;
   width: 39%;
   border: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
   border-radius: 5px;
   background-color: #f4d9ff;
+}
+@media only screen and (min-width: 800px) {
+  body header section {
+    width: 100%;
+    height: 50vh;
+    border: 0px;
+    border-end-end-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
 }
 body header section h1 {
   text-align: center;
@@ -39,6 +69,15 @@ body header nav {
   border-radius: 5px;
   background-color: #f4d9ff;
 }
+@media only screen and (min-width: 800px) {
+  body header nav {
+    width: 100%;
+    height: 50vh;
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+}
 body header nav a {
   font-size: 1.5em;
   text-decoration: none;
@@ -48,7 +87,7 @@ body header nav a {
   margin-block-end: 0.83em;
   display: block;
 }
-body main {
+body div main {
   background: #f4d9ff;
   border: 1px solid black;
   border-radius: 5px;
@@ -61,36 +100,80 @@ body main {
   min-height: 50vh;
   height: auto;
 }
-body main section {
+@media only screen and (min-width: 800px) {
+  body div main {
+    margin: 0px;
+    padding: 0px;
+    width: 80vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}
+body div main section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
 }
-body main section div {
+body div main section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid black;
   width: 43vw;
   margin: 5px;
+  padding: 10px;
   border-radius: 5px;
   text-align: center;
   background-color: #e08fff;
   position: relative;
 }
-body main section .img {
-  height: 40vw;
-  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Super_Mario_Bros_Super_Show_Title.PNG/250px-Super_Mario_Bros_Super_Show_Title.PNG);
-  background-repeat: no-repeat;
-  background-size: contain;
+body div main section div img {
+  height: 30vh;
 }
-body main section #blockOne {
-  right: 500px;
+@media only screen and (min-width: 800px) {
+  body div main section div {
+    height: 30vh;
+    width: 35vw;
+  }
 }
-body main section #blockTwo {
-  top: 500px;
+body div main section .img {
+  height: 30vh;
 }
-body main section #blockThree {
-  right: 500px;
+@media only screen and (min-width: 800px) {
+  body div main section .img {
+    height: 50vh;
+  }
+  body div main section .img img {
+    width: 17vw;
+    margin: 3px;
+  }
 }
-body main section #blockFour {
-  left: 500px;
+body div main section .hidden {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  body div main section .hidden {
+    display: flex;
+  }
+}
+body div main section #blockOne, body div main section #blockFive {
+  right: 5000px;
+}
+body div main section #blockTwo, body div main section #blockSix {
+  top: 5000px;
+}
+body div main section #blockThree, body div main section #blockSeven {
+  bottom: 5000px;
+}
+body div main section #blockFour, body div main section #blockEight {
+  left: 5000px;
+}
+@media only screen and (min-width: 800px) {
+  body div #firstMain {
+    display: none;
+  }
 }/*# sourceMappingURL=aboutMe.css.map */

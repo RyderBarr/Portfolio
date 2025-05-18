@@ -6,10 +6,148 @@
     <title>Contact</title>
 
     <link rel="stylesheet" href="./styles/css/contact.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
-    
+     <header>
+
+        <div id="title">
+
+            <h1>Contact</h1>
+
+        </div>
+
+        <nav id="nav">
+
+            <div>
+                <a href="./aboutMe.html"> About Me </a>
+            </div>
+
+            <div>
+                <a href="./index.html">Home</a>
+            </div>
+            
+            <div>
+                <a href="./projects.html">Projects</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div>
+            
+            <div>
+
+                <label for="name" aria-required="true">
+
+                    first name, second name, ...
+            
+                </label>
+
+                <!-- take function to remove commas from game tracker -->
+        
+                <input type="text" name="name" id="name">
+
+            </div>
+        
+            <div>
+
+                <label for="email" aria-required="true">
+        
+                    email
+        
+                </label>
+        
+                <input type="email" name="email" id="email">
+
+            </div>
+        
+            <div>
+
+                <label for="phone">
+        
+                    phone
+        
+                </label>
+        
+                <input type="number" name="phone" id="phone">
+
+            </div>
+        
+            <div id="messagebox">
+
+                <label for="message" aria-required="true">
+        
+                    message
+            
+                </label>
+            
+                <div>
+            
+                    <textarea name="message" id="message" cols="30" rows="10">
+                    
+                    </textarea>
+                
+                    <button>
+
+                        send
+                    
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+
+        $(document).ready(function(){
+
+            $('button').on('click', function(events){
+
+                let name = document.getElementById().value 
+                let phone = document.getElementById().value 
+                let email = document.getElementById().value 
+                let message = document.getElementById().value 
+
+                let commaLocations = [-1]
+                            
+                names = []
+
+                // locates the commas seperating the names
+                    for (x in name)
+                    {
+                                
+                        if (score[x] == ',')
+                        {
+                                
+                            commaLocations.push(x)
+                                
+                        }
+                                
+                    }
+                
+                // adds the scores to the templist
+                    for(let i = 1; i <= commaLocations.length; i++)
+                    {
+                
+                        names.push(score.substring(commaLocations[i-1]/1+1,commaLocations[i]))
+                
+                    }
+
+            })
+
+        })
+
+    </script>
 
 </body>
 </html>
