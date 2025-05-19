@@ -6,6 +6,7 @@
     <title>Projects Page</title>
 
     <link rel="stylesheet" href="./styles/css/project.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -33,9 +34,15 @@
     
     <main>
 
+        <p>
+
+            click on images to get a closer look
+
+        </p>
+
         <div>
 
-            <a href="#">link</a>
+            <a href="https://ryderbarr.github.io/poke-homework/pokedex.html">link</a>
 
             <p>
                 
@@ -52,9 +59,9 @@
 
             <section>
 
-                <img src="" alt="">
+                <img src="./project imgs/pokedexOne.png" alt="" class="dexOne">
 
-                <img src="" alt="">
+                <img src="./project imgs/pokedexTwo.png" alt="" class="dexTwo">
             
             </section>
         
@@ -62,7 +69,7 @@
         
         <div>
 
-            <a href="#">link</a>
+            <a href="https://ryderbarr.github.io/FBLA_Coding_and_Programing/">link</a>
 
             <p>
             
@@ -75,9 +82,9 @@
 
             <section>
 
-                <img src="" alt="">
+                <img src="./project imgs/FBLAOne.png" alt="" class="fblaOne">
 
-                <img src="" alt="">
+                <img src="./project imgs/FBLATwo.png" alt=""  class="fblaTwo">
             
             </section>
         
@@ -85,7 +92,7 @@
 
         <div>
 
-            <a href="#">link</a>
+            <a href="https://ryderbarr.github.io/the-Ultimate-Game-Tracker/">link</a>
 
             <p>
             
@@ -99,10 +106,8 @@
 
             <section>
 
-                <img src="" alt="">
+                <img src="./project imgs/UltamitGameTrackerOne.png" alt="" class="UGT">
 
-                <img src="" alt="">
-            
             </section>
         
         </div>
@@ -112,5 +117,80 @@
     <footer>
 
     </footer>
+
+    <div>
+
+        <img src="./project imgs/FBLAOne.png" alt="" class="display fblaOne" id="fblaOne">
+        <img src="./project imgs/FBLATwo.png" alt="" class="display fblaTwo" id="fblaTwo">
+        <img src="./project imgs/pokedexOne.png" alt="" class="display dexOne" id="dexOne">
+        <img src="./project imgs/pokedexTwo.png" alt="" class="display dexTwo" id="dexTwo">
+        <img src="./project imgs/UltamitGameTrackerOne.png" alt="" class="display UGT" id="UGT">
+
+    </div>
+
+    <script>
+        $(document).ready(function(){
+        
+            $('.fblaOne').on('click',function(events){
+
+                $('#fblaTwo').slideUp(100)
+                $('#dexOne').slideUp(100)
+                $('#dexTwo').slideUp(100)
+                $('#UGT').slideUp(100)
+
+                $('#fblaOne').slideToggle(100)
+
+            })
+
+            $('.fblaTwo').on('click',function(events){
+
+                $('#fblaOne').slideUp(100)
+                $('#dexOne').slideUp(100)
+                $('#dexTwo').slideUp(100)
+                $('#UGT').slideUp(100)
+
+                $('#fblaTwo').slideToggle(100)
+
+            })
+            
+            $('.dexOne').on('click',function(events){
+
+                $('#fblaOne').slideUp(100)
+                $('#fblaTwo').slideUp(100)
+                $('#dexTwo').slideUp(100)
+                $('#UGT').slideUp(100)
+
+                $('#dexOne').slideToggle(100)
+
+            })
+
+            $('.dexTwo').on('click',function(events){
+
+                $('#fblaOne').slideUp(100)
+                $('#fblaTwo').slideUp(100)
+                $('#dexOne').slideUp(100)
+                $('#UGT').slideUp(100)
+
+                $('#dexTwo').slideToggle(100)
+
+            })
+            
+            $('.UGT').on('click',function(events){
+
+                $('#fblaOne').slideUp(100)
+                $('#fblaTwo').slideUp(100)
+                $('#dexOne').slideUp(100)
+                $('#dexTwo').slideUp(100)
+
+                $('#UGT').slideToggle(100)
+
+            })
+        
+        })
+
+
+    </script>
+
 </body>
+
 </html>

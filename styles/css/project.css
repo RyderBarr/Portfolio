@@ -80,6 +80,19 @@ body main div section {
   border: 1px solid black;
 }
 body main div section img {
-  width: 10vw;
-  height: 10vh;
+  width: 20vw;
+  height: 20vh;
+}
+
+p {
+  text-align: center;
+}
+
+div .display {
+  position: fixed;
+  width: 90vw;
+  left: 0px;
+  top: 0px;
+  border: 20px solid black;
+  display: none;
 }/*# sourceMappingURL=project.css.map */
