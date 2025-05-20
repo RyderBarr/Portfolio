@@ -94,7 +94,7 @@
                     
                     </textarea>
                 
-                    <button>
+                    <button onclick="email()">
 
                         send
                     
@@ -108,47 +108,7 @@
 
     </main>
 
-    <script>
-
-        $(document).ready(function(){
-
-            $('button').on('click', function(events){
-
-                let name = document.getElementById().value 
-                let phone = document.getElementById().value 
-                let email = document.getElementById().value 
-                let message = document.getElementById().value 
-
-                let commaLocations = [-1]
-                            
-                names = []
-
-                // locates the commas seperating the names
-                    for (x in name)
-                    {
-                                
-                        if (score[x] == ',')
-                        {
-                                
-                            commaLocations.push(x)
-                                
-                        }
-                                
-                    }
-                
-                // adds the scores to the templist
-                    for(let i = 1; i <= commaLocations.length; i++)
-                    {
-                
-                        names.push(score.substring(commaLocations[i-1]/1+1,commaLocations[i]))
-                
-                    }
-
-            })
-
-        })
-
-    </script>
+    <script type="module" src="./script/message.js"></script>
 
 </body>
 </html>

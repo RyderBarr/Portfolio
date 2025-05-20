@@ -1,7 +1,9 @@
 * {
   margin: 3px;
+  animation: rainbow 5s infinite linear;
 }
 
+@keyframes rainbow {}
 body {
   background: #fbf0ff;
   display: flex;

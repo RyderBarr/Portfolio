@@ -72,9 +72,8 @@ body
                 width: 100%;
                 height: 50vh;
                 border: 0px;
-                border-end-end-radius: 0px;
-                border-bottom-left-radius: 0px;
-                border-bottom-right-radius: 0px;
+                border-radius: 0px;
+                
             } 
 
 
@@ -107,9 +106,7 @@ body
                 width: 100%;
                 height: 50vh;
                 border: 0px;
-                border-top-left-radius: 0px;
-                border-top-right-radius: 0px;
-                
+                border-radius: 0px;
                 
             } 
 
@@ -160,6 +157,9 @@ body
                 top: 0;
                 right: 0;
 
+                border: 0px solid black;
+                border-radius: 0px;
+                font-size: larger;
 
             } 
 
@@ -192,7 +192,14 @@ body
                     img{
 
                         height: 30vh;
-                     
+                        animation: rainbow 5s infinite linear;
+                        
+                    }
+
+                    img:hover{
+
+                        height: 50vh;
+
                     }
 
                     @media only screen and (min-width: 800px)
@@ -202,6 +209,16 @@ body
                         width: 35vw;
                     
                     } 
+
+                    @keyframes rainbow {
+                        
+                        0%{filter: hue-rotate(0deg);}
+                        5%{filter: hue-rotate(36deg);}
+                        50%{filter: hue-rotate(360deg);}
+                        95%{filter: hue-rotate(36deg);}
+                        100%{filter: hue-rotate(0deg);}
+                    
+                    }
 
                 }
 
