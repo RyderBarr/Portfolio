@@ -1,0 +1,200 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbf0ff;
+  justify-content: center;
+  align-items: center;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95vw;
+}
+@media only screen and (min-width: 800px) {
+  body header {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+body header section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 25vh;
+  height: auto;
+  width: 39%;
+  border: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 5px;
+  background-color: #f4d9ff;
+}
+@media only screen and (min-width: 800px) {
+  body header section {
+    width: 100%;
+    height: 50vh;
+    border: 0px;
+    border-radius: 0px;
+  }
+}
+body header section h1 {
+  text-align: center;
+}
+body header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 25vh;
+  height: auto;
+  width: 59%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f4d9ff;
+}
+@media only screen and (min-width: 800px) {
+  body header nav {
+    width: 100%;
+    height: 50vh;
+    border: 0px;
+    border-radius: 0px;
+  }
+}
+body header nav a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #ba23f6;
+  text-align: center;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  display: block;
+}
+body div main {
+  background: #f4d9ff;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 95vw;
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  height: auto;
+}
+@media only screen and (min-width: 800px) {
+  body div main {
+    margin: 0px;
+    padding: 0px;
+    width: 80vw;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 0px solid black;
+    border-radius: 0px;
+    font-size: larger;
+  }
+}
+body div main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+body div main section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  width: 43vw;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #e08fff;
+  position: relative;
+}
+body div main section div img {
+  height: 30vh;
+  animation: rainbow 5s infinite linear;
+}
+body div main section div img:hover {
+  height: 50vh;
+}
+@media only screen and (min-width: 800px) {
+  body div main section div {
+    height: 30vh;
+    width: 35vw;
+  }
+}
+@keyframes rainbow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  5% {
+    filter: hue-rotate(36deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  95% {
+    filter: hue-rotate(36deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+body div main section .img {
+  height: 30vh;
+}
+@media only screen and (min-width: 800px) {
+  body div main section .img {
+    height: 50vh;
+  }
+  body div main section .img img {
+    width: 17vw;
+    margin: 3px;
+  }
+}
+body div main section .hidden {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  body div main section .hidden {
+    display: flex;
+  }
+}
+body div main section #blockOne, body div main section #blockFive {
+  right: 5000px;
+}
+body div main section #blockTwo, body div main section #blockSix {
+  top: 5000px;
+}
+body div main section #blockThree, body div main section #blockSeven {
+  bottom: 5000px;
+}
+body div main section #blockFour, body div main section #blockEight {
+  left: 5000px;
+}
+@media only screen and (min-width: 800px) {
+  body div #firstMain {
+    display: none;
+  }
+}/*# sourceMappingURL=aboutMe.css.map */

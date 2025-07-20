@@ -1,0 +1,89 @@
+* {
+  margin: 3px;
+}
+
+body {
+  background: #fbf0ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+body header {
+  padding: 0px;
+  border-radius: 5px;
+}
+body header #title {
+  background: #f4d9ff;
+  width: auto;
+  border: 2px black solid;
+  padding: 4px;
+  border-radius: 5px;
+}
+body header #title h1 {
+  justify-self: center;
+}
+body header nav {
+  background: #f4d9ff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px black solid;
+  padding: 8px;
+  border-radius: 5px;
+}
+body header nav a {
+  color: #ba23f6;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+}
+body header nav a:hover {
+  color: #e08fff;
+  text-decoration: none;
+  text-shadow: 0.5px 0.5px black, -0.5px -0.5px black;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  border-radius: 5px;
+  background: #f4d9ff;
+  width: auto;
+  border: 2px black solid;
+  padding: 3px;
+  border-radius: 5px;
+}
+body main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e08fff;
+  width: 98%;
+}
+body main div div input, body main div div button, body main div div textarea, body main div div label {
+  width: 50vw;
+  text-align: center;
+  font-size: larger;
+}
+@media only screen and (min-width: 800px) {
+  body main div #messagebox div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e08fff;
+  }
+  body main div #messagebox div button {
+    width: 20vw;
+    height: 20vw;
+  }
+  body main div #messagebox div textarea {
+    height: 20vw;
+  }
+}/*# sourceMappingURL=contact.css.map */
